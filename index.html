@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" ></script>
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>Input Data</h2>
+
+<form action="#">
+
+    <table align="left">
+        <tr>
+          <td><label for="lNegara" >Negara</label></td>
+          <td><input type="text" name="lNegara" id="lNegara" oninput="getDataNegara(value)"></td>
+        </tr>
+        <tr>
+          <td><label for="lPelabuhan">Pelabuhan</label></td>
+          <td><input type="text" id="lPelabuhan" name="lPelabuhan" oninput="getDataPelabuhan(value)"></td>
+        </tr>
+        <tr>
+          <td rowspan="2" style="vertical-align: top;"><label for="lBarang">Barang</label> </td>
+          <td><input type="text" id="lBarang" name="lBarang" oninput="getDataDetail(value)"></td>
+        </tr>
+        <tr>
+          <td><input style="height: 50px;" type="text" id="lDetail" name="lDetail" ></td>
+        </tr>
+        <tr>
+            <td><label for="lHarga">Harga</label></td>
+            <td><input type="text" id="lHarga" name="lHarga" oninput="getTotal(value)"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="vertical-align: top;"><label for="lCukai">Tarif Bea Masuk</label></td>
+            <td><input style="width: 30px;" type="text" id="lCukai" name="lCukai" disabled><label for="persen"> %</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="lTotal" name="lTotal" disabled></td>
+        </tr>
+      </table>
+
+
+  
+  
+  
+</form> 
+
+</body>
+</html>
